@@ -4,53 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding microservices">
-      <change afterPath="$PROJECT_DIR$/create-microservices.bash" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-composite-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-composite-service/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-composite-service/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-composite-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-composite-service/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-composite-service/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-composite-service/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-composite-service/src/main/java/se/magnus/microservices/composite/product/ProductCompositeServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-composite-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-composite-service/src/test/java/se/magnus/microservices/composite/product/ProductCompositeServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/se/magnus/microservices/core/product/ProductServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/test/java/se/magnus/microservices/core/product/ProductServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommendation-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommendation-service/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommendation-service/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommendation-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommendation-service/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommendation-service/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommendation-service/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommendation-service/src/main/java/se/magnus/microservices/core/recommendation/RecommendationServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommendation-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommendation-service/src/test/java/se/magnus/microservices/core/recommendation/RecommendationServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/review-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/review-service/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/review-service/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/review-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/review-service/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/review-service/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/review-service/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/review-service/src/main/java/se/magnus/microservices/core/review/ReviewServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/review-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/review-service/src/test/java/se/magnus/microservices/core/review/ReviewServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding microservice: product-service&#10;Adding microservice: review-service&#10;Adding microservice: recommendation-service&#10;Adding microservice: product-composite-service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create-microservices.bash" beforeDir="false" afterPath="$PROJECT_DIR$/create-microservices.bash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-composite-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recommendation-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/recommendation-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/review-service/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,8 +156,16 @@
       <workItem from="1659434342942" duration="534000" />
       <workItem from="1659440725343" duration="4071000" />
       <workItem from="1659445159154" duration="139000" />
-      <workItem from="1659445331851" duration="145000" />
+      <workItem from="1659445331851" duration="2131000" />
     </task>
+    <task id="LOCAL-00001" summary="Adding microservice: product-service&#10;Adding microservice: review-service&#10;Adding microservice: recommendation-service&#10;Adding microservice: product-composite-service">
+      <created>1659445587773</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659445587773</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,5 +184,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Adding microservice: product-service&#10;Adding microservice: review-service&#10;Adding microservice: recommendation-service&#10;Adding microservice: product-composite-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding microservice: product-service&#10;Adding microservice: review-service&#10;Adding microservice: recommendation-service&#10;Adding microservice: product-composite-service" />
   </component>
 </project>
