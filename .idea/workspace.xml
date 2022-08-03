@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Remove null declaration from core api product and recommendation because NullPointerException closes #9">
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/exceptions/exceptions.java" afterDir="false" />
-    </list>
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Definition from exceptions GET requests by invalid input exception closes #10" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,7 +178,7 @@
       <workItem from="1659524074526" duration="839000" />
       <workItem from="1659524929869" duration="878000" />
       <workItem from="1659525939305" duration="593000" />
-      <workItem from="1659526669853" duration="3271000" />
+      <workItem from="1659526669853" duration="3560000" />
     </task>
     <task id="LOCAL-00001" summary="Adding microservice: product-service&#10;Adding microservice: review-service&#10;Adding microservice: recommendation-service&#10;Adding microservice: product-composite-service">
       <created>1659445587773</created>
@@ -280,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659530852198</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Definition from exceptions GET requests by invalid input exception closes #10">
+      <created>1659531434824</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1659531434824</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,6 +321,7 @@
     <MESSAGE value="Adding explain-field" />
     <MESSAGE value="Adding core api service for review microservice closes #8" />
     <MESSAGE value="Remove null declaration from core api product and recommendation because NullPointerException closes #9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove null declaration from core api product and recommendation because NullPointerException closes #9" />
+    <MESSAGE value="Definition from exceptions GET requests by invalid input exception closes #10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Definition from exceptions GET requests by invalid input exception closes #10" />
   </component>
 </project>
