@@ -5,7 +5,7 @@ package de.oscharko.api.core.product;
  * Created by oscharko on 03.08.22 - 14:14 😎
  * Check out -> www.oscharko.de
  * Microservices-with-Spring-Boot-and-Spring-Cloud
- * Inside the module - core
+ * Inside the module - api.core.product
  * Inside the package - de.oscharko.api.composite.core
  */
 public class Product {
