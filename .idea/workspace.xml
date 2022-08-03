@@ -4,41 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding MIT License closes #3">
-      <change afterPath="$PROJECT_DIR$/api/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/ApiApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/test/java/de/oscharko/api/ApiApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/src/main/java/de/oscharko/util/UtilApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/src/test/java/de/oscharko/util/UtilApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create-microservices.bash" beforeDir="false" afterPath="$PROJECT_DIR$/create-microservices.bash" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-composite-service/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-composite-service/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-composite-service/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-composite-service/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommendation-service/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommendation-service/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommendation-service/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommendation-service/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/review-service/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/review-service/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/review-service/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/review-service/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-    </list>
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding new module api and util&#10;Remove unused files and directories&#10;Update project-build file&#10;closes #4" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,11 +46,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Microservices-with-Spring-Boot-and-Spring-Cloud" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Microservices-with-Spring-Boot-and-Spring-Cloud" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -109,24 +70,24 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/oscharko/Development/Java/Books/Microservices-with-Spring-Boot-and-Spring-Cloud-2E/oscharko/Microservices-with-Spring-Boot-and-Spring-Cloud&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;bd0051f1d5ec1052105a2adb60a4d789&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-1.8",
+    "last_opened_file_path": "/Users/oscharko/Development/Java/Books/Microservices-with-Spring-Boot-and-Spring-Cloud-2E/oscharko/Microservices-with-Spring-Boot-and-Spring-Cloud",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "fileTemplates",
+    "spring.configuration.checksum": "48629afe2f8bcc37515427ae9d5f91c8",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -205,6 +166,7 @@
       <workItem from="1659450727689" duration="421000" />
       <workItem from="1659522513178" duration="1287000" />
       <workItem from="1659524074526" duration="839000" />
+      <workItem from="1659524929869" duration="335000" />
     </task>
     <task id="LOCAL-00001" summary="Adding microservice: product-service&#10;Adding microservice: review-service&#10;Adding microservice: recommendation-service&#10;Adding microservice: product-composite-service">
       <created>1659445587773</created>
@@ -234,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659450834541</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding new module api and util&#10;Remove unused files and directories&#10;Update project-build file&#10;closes #4">
+      <created>1659525151203</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659525151203</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +226,7 @@
     <MESSAGE value="Update start version closes #1" />
     <MESSAGE value="Adding README.md closes #2" />
     <MESSAGE value="Adding MIT License closes #3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding MIT License closes #3" />
+    <MESSAGE value="Adding new module api and util&#10;Remove unused files and directories&#10;Update project-build file&#10;closes #4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding new module api and util&#10;Remove unused files and directories&#10;Update project-build file&#10;closes #4" />
   </component>
 </project>
