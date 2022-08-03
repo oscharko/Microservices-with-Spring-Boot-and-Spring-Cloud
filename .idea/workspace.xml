@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding product composite service closes #5">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/composite/core/product/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/composite/core/product/ProductService.java" afterDir="false" />
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Core api service for product microservice closes #6">
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/core/recommendation/Recommendation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/core/recommendation/RecommendationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/core/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/core/product/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/core/product/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/core/product/ProductService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +184,7 @@
       <workItem from="1659524074526" duration="839000" />
       <workItem from="1659524929869" duration="878000" />
       <workItem from="1659525939305" duration="593000" />
-      <workItem from="1659526669853" duration="1266000" />
+      <workItem from="1659526669853" duration="2312000" />
     </task>
     <task id="LOCAL-00001" summary="Adding microservice: product-service&#10;Adding microservice: review-service&#10;Adding microservice: recommendation-service&#10;Adding microservice: product-composite-service">
       <created>1659445587773</created>
@@ -248,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659528241007</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Core api service for product microservice closes #6">
+      <created>1659529308284</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1659529308284</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +287,7 @@
     <MESSAGE value="Changes workspace" />
     <MESSAGE value="Adding new module api and util to git" />
     <MESSAGE value="Adding product composite service closes #5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding product composite service closes #5" />
+    <MESSAGE value="Core api service for product microservice closes #6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Core api service for product microservice closes #6" />
   </component>
 </project>
