@@ -1,4 +1,6 @@
 rootProject.name = 'Microservices-with-Spring-Boot-and-Spring-Cloud'
+include ':util'
+include ':api'
 include ':product-service'
 include ':review-service'
 include ':recommendation-service'
