@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Changes workspace">
-      <change afterPath="$PROJECT_DIR$/api/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/ApiApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/test/java/de/oscharko/api/ApiApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding new module api and util to git closes 4">
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/composite/product/ProductAggregate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/composite/product/ProductCompositeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/composite/product/RecommendationSummary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/composite/product/ReviewSummary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/composite/product/ServiceAddresses.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/ApiApplication.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +61,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
@@ -94,7 +100,7 @@
     "last_opened_file_path": "/Users/oscharko/Development/Java/Books/Microservices-with-Spring-Boot-and-Spring-Cloud-2E/oscharko/Microservices-with-Spring-Boot-and-Spring-Cloud",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "48629afe2f8bcc37515427ae9d5f91c8",
+    "spring.configuration.checksum": "ab2c1ef590da612dfbdf3534c88d4868",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -177,7 +183,8 @@
       <workItem from="1659522513178" duration="1287000" />
       <workItem from="1659524074526" duration="839000" />
       <workItem from="1659524929869" duration="878000" />
-      <workItem from="1659525939305" duration="24000" />
+      <workItem from="1659525939305" duration="593000" />
+      <workItem from="1659526669853" duration="820000" />
     </task>
     <task id="LOCAL-00001" summary="Adding microservice: product-service&#10;Adding microservice: review-service&#10;Adding microservice: recommendation-service&#10;Adding microservice: product-composite-service">
       <created>1659445587773</created>
@@ -228,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659525592431</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Adding new module api and util to git">
+      <created>1659526029369</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1659526029369</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +271,7 @@
     <MESSAGE value="Adding MIT License closes #3" />
     <MESSAGE value="Adding new module api and util&#10;Remove unused files and directories&#10;Update project-build file&#10;closes #4" />
     <MESSAGE value="Changes workspace" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes workspace" />
+    <MESSAGE value="Adding new module api and util to git" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding new module api and util to git" />
   </component>
 </project>
