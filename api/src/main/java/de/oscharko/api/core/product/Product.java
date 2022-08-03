@@ -17,9 +17,9 @@ public class Product {
 
     public Product() {
         productId = 0;
-        name = null;
+        name = "";
         weight = 0;
-        serviceAddress = null;
+        serviceAddress = "";
     }
 
     public Product(int productId, String name, int weight, String serviceAddress) {

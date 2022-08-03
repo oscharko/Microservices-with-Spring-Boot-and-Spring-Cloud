@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding explain-field">
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/core/review/Review.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/core/review/ReviewService.java" afterDir="false" />
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding core api service for review microservice closes #8">
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/core/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/core/product/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/core/recommendation/Recommendation.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/core/recommendation/Recommendation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +181,7 @@
       <workItem from="1659524074526" duration="839000" />
       <workItem from="1659524929869" duration="878000" />
       <workItem from="1659525939305" duration="593000" />
-      <workItem from="1659526669853" duration="2739000" />
+      <workItem from="1659526669853" duration="3014000" />
     </task>
     <task id="LOCAL-00001" summary="Adding microservice: product-service&#10;Adding microservice: review-service&#10;Adding microservice: recommendation-service&#10;Adding microservice: product-composite-service">
       <created>1659445587773</created>
@@ -267,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659530125454</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Adding core api service for review microservice closes #8">
+      <created>1659530527193</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1659530527193</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,6 +308,7 @@
     <MESSAGE value="Core api service for product microservice closes #6" />
     <MESSAGE value="Adding core api service for recommendation microservice closes #7" />
     <MESSAGE value="Adding explain-field" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding explain-field" />
+    <MESSAGE value="Adding core api service for review microservice closes #8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding core api service for review microservice closes #8" />
   </component>
 </project>

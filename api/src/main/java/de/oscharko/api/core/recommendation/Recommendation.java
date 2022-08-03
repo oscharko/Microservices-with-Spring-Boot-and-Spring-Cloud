@@ -19,10 +19,10 @@ public class Recommendation {
     public Recommendation() {
         productId = 0;
         recommendationId = 0;
-        author = null;
+        author = "";
         rate = 0;
-        content = null;
-        serviceAddress = null;
+        content = "";
+        serviceAddress = "";
     }
 
     public Recommendation(int productId, int recommendationId, String author, int rate, String content, String serviceAddress) {
