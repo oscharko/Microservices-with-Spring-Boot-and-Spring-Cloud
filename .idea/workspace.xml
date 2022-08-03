@@ -5,6 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Changes workspace">
+      <change afterPath="$PROJECT_DIR$/api/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/ApiApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/de/oscharko/api/ApiApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +64,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -85,7 +93,7 @@
     "jdk.selected.JAVA_MODULE": "corretto-1.8",
     "last_opened_file_path": "/Users/oscharko/Development/Java/Books/Microservices-with-Spring-Boot-and-Spring-Cloud-2E/oscharko/Microservices-with-Spring-Boot-and-Spring-Cloud",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "fileTemplates",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "spring.configuration.checksum": "48629afe2f8bcc37515427ae9d5f91c8",
     "vue.rearranger.settings.migration": "true"
   }
@@ -168,7 +176,8 @@
       <workItem from="1659450727689" duration="421000" />
       <workItem from="1659522513178" duration="1287000" />
       <workItem from="1659524074526" duration="839000" />
-      <workItem from="1659524929869" duration="638000" />
+      <workItem from="1659524929869" duration="878000" />
+      <workItem from="1659525939305" duration="24000" />
     </task>
     <task id="LOCAL-00001" summary="Adding microservice: product-service&#10;Adding microservice: review-service&#10;Adding microservice: recommendation-service&#10;Adding microservice: product-composite-service">
       <created>1659445587773</created>
@@ -212,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659525311889</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Changes workspace">
+      <created>1659525592431</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1659525592431</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +247,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/api" />
+      <path value="$PROJECT_DIR$/util" />
+    </ignored-roots>
     <MESSAGE value="Adding microservice: product-service&#10;Adding microservice: review-service&#10;Adding microservice: recommendation-service&#10;Adding microservice: product-composite-service" />
     <MESSAGE value="Update start version closes #1" />
     <MESSAGE value="Adding README.md closes #2" />
