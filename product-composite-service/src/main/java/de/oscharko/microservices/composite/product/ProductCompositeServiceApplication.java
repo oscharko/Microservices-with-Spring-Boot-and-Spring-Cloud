@@ -1,4 +1,4 @@
-package se.magnus.microservices.composite.product;
+package de.oscharko.microservices.composite.product;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
