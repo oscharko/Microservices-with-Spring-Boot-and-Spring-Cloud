@@ -1,4 +1,4 @@
-package se.magnus.microservices.core.review;
+package de.oscharko.microservices.core.review;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

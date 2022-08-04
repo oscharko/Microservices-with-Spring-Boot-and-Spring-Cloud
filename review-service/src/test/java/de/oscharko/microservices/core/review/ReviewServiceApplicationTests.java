@@ -1,4 +1,4 @@
-package se.magnus.microservices.core.review;
+package de.oscharko.microservices.core.review;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
