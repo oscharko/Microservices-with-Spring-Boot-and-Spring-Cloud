@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Rename group.id for the microservices product-service because using the wrong .bash file closes #17">
-      <change beforePath="$PROJECT_DIR$/product-composite-service/src/main/java/se/magnus/microservices/composite/product/ProductCompositeServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/ProductCompositeServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-composite-service/src/test/java/se/magnus/microservices/composite/product/ProductCompositeServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/src/test/java/de/oscharko/microservices/composite/product/ProductCompositeServiceApplicationTests.java" afterDir="false" />
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Rename group.id for the microservices review-service because using the wrong .bash file closes #20">
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/de/oscharko/microservices/core/product/services/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,28 +122,28 @@
   <component name="RunManager" selected="Spring Boot.ProductCompositeServiceApplication">
     <configuration name="ProductCompositeServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Microservices-with-Spring-Boot-and-Spring-Cloud.product-composite-service.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="se.magnus.microservices.composite.product.ProductCompositeServiceApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="de.oscharko.microservices.composite.product.ProductCompositeServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="ProductServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Microservices-with-Spring-Boot-and-Spring-Cloud.product-service.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="se.magnus.microservices.core.product.ProductServiceApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="de.oscharko.microservices.core.product.ProductServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="RecommendationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Microservices-with-Spring-Boot-and-Spring-Cloud.recommendation-service.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="se.magnus.microservices.core.recommendation.RecommendationServiceApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="de.oscharko.microservices.core.recommendation.RecommendationServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="ReviewServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Microservices-with-Spring-Boot-and-Spring-Cloud.review-service.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="se.magnus.microservices.core.review.ReviewServiceApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="de.oscharko.microservices.core.review.ReviewServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -168,7 +168,7 @@
       <workItem from="1659524929869" duration="878000" />
       <workItem from="1659525939305" duration="593000" />
       <workItem from="1659526669853" duration="3993000" />
-      <workItem from="1659598977798" duration="3441000" />
+      <workItem from="1659598977798" duration="4622000" />
     </task>
     <task id="LOCAL-00001" summary="Adding microservice: product-service&#10;Adding microservice: review-service&#10;Adding microservice: recommendation-service&#10;Adding microservice: product-composite-service">
       <created>1659445587773</created>
@@ -324,7 +324,28 @@
       <option name="project" value="LOCAL" />
       <updated>1659604653127</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Rename group.id for the microservices product-composite-service because using the wrong .bash file closes #18">
+      <created>1659604804896</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1659604804896</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Rename group.id for the microservices recommendation-service because using the wrong .bash file closes #19">
+      <created>1659604954094</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1659604954094</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Rename group.id for the microservices review-service because using the wrong .bash file closes #20">
+      <created>1659605025324</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1659605025324</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,6 +389,9 @@
     <MESSAGE value="Adding the api and util projects to the build.gradle file product-service closes #15" />
     <MESSAGE value="Enable Spring Boot's autoconfiguration feature to detect Spring Beans in the api and util closes #16" />
     <MESSAGE value="Rename group.id for the microservices product-service because using the wrong .bash file closes #17" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename group.id for the microservices product-service because using the wrong .bash file closes #17" />
+    <MESSAGE value="Rename group.id for the microservices product-composite-service because using the wrong .bash file closes #18" />
+    <MESSAGE value="Rename group.id for the microservices recommendation-service because using the wrong .bash file closes #19" />
+    <MESSAGE value="Rename group.id for the microservices review-service because using the wrong .bash file closes #20" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename group.id for the microservices review-service because using the wrong .bash file closes #20" />
   </component>
 </project>
