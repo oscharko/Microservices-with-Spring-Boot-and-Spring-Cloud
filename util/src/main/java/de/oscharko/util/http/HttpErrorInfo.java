@@ -20,15 +20,15 @@ public class HttpErrorInfo {
 
     public HttpErrorInfo() {
         timestamp = null;
-        httpStatus = null;
-        path = "";
-        message = "";
+        this.httpStatus = null;
+        this.path = null;
+        this.message = null;
     }
 
-    public HttpErrorInfo(ZonedDateTime timestamp, String path, HttpStatus httpStatus, String message) {
-        this.timestamp = timestamp;
-        this.path = path;
+    public HttpErrorInfo(HttpStatus httpStatus, String path, String message) {
+        timestamp = ZonedDateTime.now();
         this.httpStatus = httpStatus;
+        this.path = path;
         this.message = message;
     }
 

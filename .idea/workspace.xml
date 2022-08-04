@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding utility class ServiceUtil #14">
-      <change afterPath="$PROJECT_DIR$/util/src/main/java/de/oscharko/util/http/HttpErrorInfo.java" afterDir="false" />
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding utility class HttpErrorInfo closes #14">
+      <change afterPath="$PROJECT_DIR$/util/src/main/java/de/oscharko/util/http/GlobalControllerExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/src/main/java/de/oscharko/util/http/HttpErrorInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/util/src/main/java/de/oscharko/util/http/HttpErrorInfo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +168,7 @@
       <workItem from="1659524929869" duration="878000" />
       <workItem from="1659525939305" duration="593000" />
       <workItem from="1659526669853" duration="3993000" />
-      <workItem from="1659598977798" duration="1186000" />
+      <workItem from="1659598977798" duration="2228000" />
     </task>
     <task id="LOCAL-00001" summary="Adding microservice: product-service&#10;Adding microservice: review-service&#10;Adding microservice: recommendation-service&#10;Adding microservice: product-composite-service">
       <created>1659445587773</created>
@@ -288,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659600516641</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Adding utility class HttpErrorInfo closes #14">
+      <created>1659600970781</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1659600970781</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,6 +335,7 @@
     <MESSAGE value="Definition from exceptions GET requests by invalid input exception closes #10" />
     <MESSAGE value="Definition from exceptions GET requests by not found exception closes #11" />
     <MESSAGE value="Adding utility class ServiceUtil #14" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding utility class ServiceUtil #14" />
+    <MESSAGE value="Adding utility class HttpErrorInfo closes #14" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding utility class HttpErrorInfo closes #14" />
   </component>
 </project>
