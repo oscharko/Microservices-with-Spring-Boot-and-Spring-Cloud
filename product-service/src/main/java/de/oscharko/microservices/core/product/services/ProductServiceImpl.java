@@ -8,6 +8,7 @@ import de.oscharko.util.http.ServiceUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * IntelliJ IDEA 2022.2 (Ultimate Edition)
@@ -16,6 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * Microservices-with-Spring-Boot-and-Spring-Cloud
  * Inside the package - de.oscharko.microservices.core.product.services
  */
+@RestController
 public class ProductServiceImpl implements ProductService {
 
     private static final Logger LOG = LoggerFactory.getLogger(ProductServiceImpl.class);
