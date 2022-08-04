@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Set up runtime properties for microservice product-service closes #22">
-      <change afterPath="$PROJECT_DIR$/logs/product-service/application-debug.log/spring.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" beforeDir="false" />
-    </list>
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Set up runtime properties and logging behaviour (dev) for microservice product-service closes #23" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,7 +167,7 @@
       <workItem from="1659525939305" duration="593000" />
       <workItem from="1659526669853" duration="3993000" />
       <workItem from="1659598977798" duration="5727000" />
-      <workItem from="1659611309313" duration="3494000" />
+      <workItem from="1659611309313" duration="3806000" />
     </task>
     <task id="LOCAL-00001" summary="Adding microservice: product-service&#10;Adding microservice: review-service&#10;Adding microservice: recommendation-service&#10;Adding microservice: product-composite-service">
       <created>1659445587773</created>
@@ -370,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659614137119</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Set up runtime properties and logging behaviour (dev) for microservice product-service closes #23">
+      <created>1659615348438</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1659615348438</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,7 +395,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Adding README.md closes #2" />
     <MESSAGE value="Adding MIT License closes #3" />
     <MESSAGE value="Adding new module api and util&#10;Remove unused files and directories&#10;Update project-build file&#10;closes #4" />
     <MESSAGE value="Changes workspace" />
@@ -418,6 +419,7 @@
     <MESSAGE value="Create and implement the service implementation file for product-service closes #21" />
     <MESSAGE value="Wrong group.id and forget annotation closes #22" />
     <MESSAGE value="Set up runtime properties for microservice product-service closes #22" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set up runtime properties for microservice product-service closes #22" />
+    <MESSAGE value="Set up runtime properties and logging behaviour (dev) for microservice product-service closes #23" />
+    <option name="LAST_COMMIT_MESSAGE" value="Set up runtime properties and logging behaviour (dev) for microservice product-service closes #23" />
   </component>
 </project>
