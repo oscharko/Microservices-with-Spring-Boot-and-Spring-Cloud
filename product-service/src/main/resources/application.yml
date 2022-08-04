@@ -1,0 +1,12 @@
+server.port: 7001
+server.error.include-message: always
+
+logging:
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    root: INFO
+    se.magnus: DEBUG
+  file:
+    path: logs/product-service/application-debug.log
