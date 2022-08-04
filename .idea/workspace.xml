@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Definition from exceptions GET requests by invalid input exception closes #10" />
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Definition from exceptions GET requests by not found exception closes #11">
+      <change afterPath="$PROJECT_DIR$/util/src/main/java/de/oscharko/util/http/ServiceUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/src/main/java/de/oscharko/util/UtilApplication.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +98,7 @@
     "last_opened_file_path": "/Users/oscharko/Development/Java/Books/Microservices-with-Spring-Boot-and-Spring-Cloud-2E/oscharko/Microservices-with-Spring-Boot-and-Spring-Cloud",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "ab2c1ef590da612dfbdf3534c88d4868",
+    "spring.configuration.checksum": "48629afe2f8bcc37515427ae9d5f91c8",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -116,14 +120,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiApplication">
-    <configuration name="ApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="Microservices-with-Spring-Boot-and-Spring-Cloud.api.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="de.oscharko.api.ApiApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.ProductCompositeServiceApplication">
     <configuration name="ProductCompositeServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Microservices-with-Spring-Boot-and-Spring-Cloud.product-composite-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="se.magnus.microservices.composite.product.ProductCompositeServiceApplication" />
@@ -152,13 +149,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UtilApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="Microservices-with-Spring-Boot-and-Spring-Cloud.util.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="de.oscharko.util.UtilApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -178,7 +168,8 @@
       <workItem from="1659524074526" duration="839000" />
       <workItem from="1659524929869" duration="878000" />
       <workItem from="1659525939305" duration="593000" />
-      <workItem from="1659526669853" duration="3560000" />
+      <workItem from="1659526669853" duration="3993000" />
+      <workItem from="1659598977798" duration="1005000" />
     </task>
     <task id="LOCAL-00001" summary="Adding microservice: product-service&#10;Adding microservice: review-service&#10;Adding microservice: recommendation-service&#10;Adding microservice: product-composite-service">
       <created>1659445587773</created>
@@ -285,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659531434824</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Definition from exceptions GET requests by not found exception closes #11">
+      <created>1659531639736</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1659531639736</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,6 +320,7 @@
     <MESSAGE value="Adding core api service for review microservice closes #8" />
     <MESSAGE value="Remove null declaration from core api product and recommendation because NullPointerException closes #9" />
     <MESSAGE value="Definition from exceptions GET requests by invalid input exception closes #10" />
-    <option name="LAST_COMMIT_MESSAGE" value="Definition from exceptions GET requests by invalid input exception closes #10" />
+    <MESSAGE value="Definition from exceptions GET requests by not found exception closes #11" />
+    <option name="LAST_COMMIT_MESSAGE" value="Definition from exceptions GET requests by not found exception closes #11" />
   </component>
 </project>
