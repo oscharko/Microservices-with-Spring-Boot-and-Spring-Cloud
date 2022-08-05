@@ -16,7 +16,7 @@ public interface ProductService {
     /**
      * Sample usage: "curl $HOST:$PORT/product/1".
      *
-     * @param productId Id of the product
+     * @param productId ID of the product
      * @return the product, if found, else null
      */
     @GetMapping(
