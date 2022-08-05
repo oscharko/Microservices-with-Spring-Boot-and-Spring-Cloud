@@ -1,4 +1,5 @@
 server.port: 7000
+server.error.include-message: always
 
 app:
   product-service:
@@ -10,3 +11,13 @@ app:
   review-service:
     host: localhost
     port: 7003
+
+logging:
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    root: INFO
+    de.oscharko: DEBUG
+  file:
+    path: logs/product-composite-service/application-debug.log
