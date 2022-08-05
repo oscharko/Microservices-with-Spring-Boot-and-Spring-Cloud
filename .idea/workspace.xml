@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Changes group.id">
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Disabled the creation of the new plain jar file closes #24">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-composite-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommendation-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/recommendation-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/review-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/review-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-composite-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +170,7 @@
       <workItem from="1659525939305" duration="593000" />
       <workItem from="1659526669853" duration="3993000" />
       <workItem from="1659598977798" duration="5727000" />
-      <workItem from="1659611309313" duration="4582000" />
+      <workItem from="1659611309313" duration="6028000" />
     </task>
     <task id="LOCAL-00001" summary="Adding microservice: product-service&#10;Adding microservice: review-service&#10;Adding microservice: recommendation-service&#10;Adding microservice: product-composite-service">
       <created>1659445587773</created>
@@ -399,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659615766018</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Disabled the creation of the new plain jar file closes #24">
+      <created>1659616452672</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1659616452672</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,7 +426,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Adding new module api and util to git" />
     <MESSAGE value="Adding product composite service closes #5" />
     <MESSAGE value="Core api service for product microservice closes #6" />
     <MESSAGE value="Adding core api service for recommendation microservice closes #7" />
@@ -447,6 +450,7 @@
     <MESSAGE value="update .gitignore" />
     <MESSAGE value="delete logs folder" />
     <MESSAGE value="Changes group.id" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes group.id" />
+    <MESSAGE value="Disabled the creation of the new plain jar file closes #24" />
+    <option name="LAST_COMMIT_MESSAGE" value="Disabled the creation of the new plain jar file closes #24" />
   </component>
 </project>
