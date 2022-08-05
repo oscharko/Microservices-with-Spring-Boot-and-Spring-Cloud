@@ -1,0 +1,12 @@
+server.port: 7003
+server.error.include-message: always
+
+logging:
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    root: INFO
+    de.oscharko: DEBUG
+  file:
+    path: logs/review-service/application-debug.log
