@@ -36,8 +36,8 @@ public class ProductCompositeServiceImpl implements ProductCompositeService {
   /**
    * Returns a response object of the ProductAggregate type based on the responses from the calls to the integration component
    *
-   * @param productId
-   * @return
+   * @param productId ID of the product
+   * @return a response object of the ProductAggregate
    */
   @Override
   public ProductAggregate getProduct(int productId) {
@@ -57,11 +57,11 @@ public class ProductCompositeServiceImpl implements ProductCompositeService {
   /**
    * Creates a product aggregate for the given product
    *
-   * @param product
-   * @param recommendations
-   * @param reviews
-   * @param serviceAddress
-   * @return
+   * @param product product to aggregate
+   * @param recommendations recommendations for the product
+   * @param reviews reviews for the product
+   * @param serviceAddress serviceAddress
+   * @return a product aggregate object
    */
 
   private ProductAggregate createProductAggregate(
