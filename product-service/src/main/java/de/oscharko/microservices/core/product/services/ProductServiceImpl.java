@@ -28,6 +28,12 @@ public class ProductServiceImpl implements ProductService {
         this.serviceUtil = serviceUtil;
     }
 
+    /**
+     * Get the product from the request
+     * @param productId ID of the product
+     * @return
+     */
+
     @Override
     public Product getProduct(int productId) {
         LOG.debug("/product return the found product for productId={}", productId);

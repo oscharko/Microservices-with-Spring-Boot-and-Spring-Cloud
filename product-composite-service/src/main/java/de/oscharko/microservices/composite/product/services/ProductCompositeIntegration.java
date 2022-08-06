@@ -7,12 +7,19 @@ import de.oscharko.api.core.recommendation.Recommendation;
 import de.oscharko.api.core.recommendation.RecommendationService;
 import de.oscharko.api.core.review.Review;
 import de.oscharko.api.core.review.ReviewService;
+import de.oscharko.api.exceptions.InvalidInputException;
+import de.oscharko.api.exceptions.NotFoundException;
+import de.oscharko.util.http.HttpErrorInfo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Component;
+import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 
+import java.io.IOException;
 import java.util.List;
 
 import static org.springframework.http.HttpMethod.GET;
@@ -27,6 +34,7 @@ import static org.springframework.http.HttpMethod.GET;
 @Component
 public class ProductCompositeIntegration implements ProductService, RecommendationService, ReviewService {
 
+    private static final Logger LOG = LoggerFactory.getLogger(ProductCompositeIntegration.class);
     private final RestTemplate restTemplate;
     private final ObjectMapper mapper;
 
@@ -52,9 +60,9 @@ public class ProductCompositeIntegration implements ProductService, Recommendati
         this.restTemplate = restTemplate;
         this.mapper = mapper;
 
-        productServiceUrl = "http://" + productServiceHost + ":" + productServicePort + "/product/";
-        recommendationServiceUrl = "http://" + recommendationServiceHost + ":" + recommendationServicePort + "/recommendation?productId=";
-        reviewServiceUrl = "http://" + reviewServiceHost + ":" + reviewServicePort + "/review?productId=";
+        productServiceUrl = "https://" + productServiceHost + ":" + productServicePort + "/product/";
+        recommendationServiceUrl = "https://" + recommendationServiceHost + ":" + recommendationServicePort + "/recommendation?productId=";
+        reviewServiceUrl = "https://" + reviewServiceHost + ":" + reviewServicePort + "/review?productId=";
     }
 
     /**
@@ -66,9 +74,47 @@ public class ProductCompositeIntegration implements ProductService, Recommendati
      */
 
     public Product getProduct(int productId) {
-        String url = productServiceUrl + productId;
-        Product product = restTemplate.getForObject(url, Product.class);
-        return product;
+
+        try {
+            String url = productServiceUrl + productId;
+            LOG.debug("Will call getProduct API on URL: {}", url);
+
+            Product product = restTemplate.getForObject(url, Product.class);
+            assert product != null;
+            LOG.debug("Found a product with id: {}", product.getProductId());
+
+            return product;
+
+        } catch (HttpClientErrorException ex) {
+
+            switch (ex.getStatusCode()) {
+                case NOT_FOUND:
+                    throw new NotFoundException(getErrorMessage(ex));
+
+                case UNPROCESSABLE_ENTITY:
+                    throw new InvalidInputException(getErrorMessage(ex));
+
+                default:
+                    LOG.warn("Got an unexpected HTTP error: {}, will rethrow it", ex.getStatusCode());
+                    LOG.warn("Error body: {}", ex.getResponseBodyAsString());
+                    throw ex;
+            }
+        }
+    }
+
+    /**
+     * Returns the error message
+     *
+     * @param ex error exception thrown by the client application
+     * @return error message
+     */
+
+    private String getErrorMessage(HttpClientErrorException ex) {
+        try {
+            return mapper.readValue(ex.getResponseBodyAsString(), HttpErrorInfo.class).getMessage();
+        } catch (IOException ioex) {
+            return ex.getMessage();
+        }
     }
 
     /**
@@ -78,11 +124,9 @@ public class ProductCompositeIntegration implements ProductService, Recommendati
 
     public List<Recommendation> getRecommendations(int productId) {
         String url = recommendationServiceUrl + productId;
-        List<Recommendation> recommendations =
-                restTemplate.exchange(url, GET, null, new
-                        ParameterizedTypeReference<List<Recommendation>>() {
-                        }).getBody();
-        return recommendations;
+        return restTemplate.exchange(url, GET, null, new
+                ParameterizedTypeReference<List<Recommendation>>() {
+                }).getBody();
     }
 
     /**
@@ -92,9 +136,8 @@ public class ProductCompositeIntegration implements ProductService, Recommendati
 
     public List<Review> getReviews(int productId) {
         String url = reviewServiceUrl + productId;
-        List<Review> reviews = restTemplate.exchange(url, GET, null,
+        return restTemplate.exchange(url, GET, null,
                 new ParameterizedTypeReference<List<Review>>() {
                 }).getBody();
-        return reviews;
     }
 }

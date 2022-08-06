@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding devtools to product-service closes #31">
-      <change afterPath="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/services/ProductCompositeServiceImpl.java" afterDir="false" />
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="API implementation of the composite microservice closes #32">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/src/main/java/de/oscharko/util/http/ServiceUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/util/src/main/java/de/oscharko/util/http/ServiceUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/services/ProductCompositeIntegration.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/services/ProductCompositeIntegration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/de/oscharko/microservices/core/product/services/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/de/oscharko/microservices/core/product/services/ProductServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +186,7 @@
       <workItem from="1659707487414" duration="432000" />
       <workItem from="1659707941592" duration="235000" />
       <workItem from="1659723847366" duration="64000" />
-      <workItem from="1659724053382" duration="9079000" />
+      <workItem from="1659724053382" duration="11375000" />
     </task>
     <task id="LOCAL-00001" summary="Adding microservice: product-service&#10;Adding microservice: review-service&#10;Adding microservice: recommendation-service&#10;Adding microservice: product-composite-service">
       <created>1659445587773</created>
@@ -475,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659725418597</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="API implementation of the composite microservice closes #32">
+      <created>1659775202526</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1659775202526</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,7 +505,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Definition from exceptions GET requests by not found exception closes #11" />
     <MESSAGE value="Adding utility class ServiceUtil #14" />
     <MESSAGE value="Adding utility class HttpErrorInfo closes #14" />
     <MESSAGE value="Adding utility class GlobalControllerExceptionHandler closes #12" />
@@ -523,6 +529,7 @@
     <MESSAGE value="Injection of the integration component into the main application class closes #29" />
     <MESSAGE value="Create the constructor that’s stores the injected objects for building the URL's and implements the API methods for the three core services closes #30" />
     <MESSAGE value="Adding devtools to product-service closes #31" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding devtools to product-service closes #31" />
+    <MESSAGE value="API implementation of the composite microservice closes #32" />
+    <option name="LAST_COMMIT_MESSAGE" value="API implementation of the composite microservice closes #32" />
   </component>
 </project>
