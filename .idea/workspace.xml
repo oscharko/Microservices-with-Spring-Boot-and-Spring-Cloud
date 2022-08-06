@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Completes implementation of both the code and composite microservices closes #33">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/ProductCompositeServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/ProductCompositeServiceApplication.java" afterDir="false" />
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding annotation @ComponentScan() to the microservices product-composite-service, recommendation-service and review-service closes #34">
       <change beforePath="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/services/ProductCompositeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/services/ProductCompositeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommendation-service/src/main/java/de/oscharko/microservices/core/recommendation/RecommendationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/recommendation-service/src/main/java/de/oscharko/microservices/core/recommendation/RecommendationServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/review-service/src/main/java/de/oscharko/microservices/core/review/ReviewServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/review-service/src/main/java/de/oscharko/microservices/core/review/ReviewServiceApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +185,7 @@
       <workItem from="1659707487414" duration="432000" />
       <workItem from="1659707941592" duration="235000" />
       <workItem from="1659723847366" duration="64000" />
-      <workItem from="1659724053382" duration="12386000" />
+      <workItem from="1659724053382" duration="12752000" />
     </task>
     <task id="LOCAL-00001" summary="Adding microservice: product-service&#10;Adding microservice: review-service&#10;Adding microservice: recommendation-service&#10;Adding microservice: product-composite-service">
       <created>1659445587773</created>
@@ -492,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659777481793</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Adding annotation @ComponentScan() to the microservices product-composite-service, recommendation-service and review-service closes #34">
+      <created>1659778394429</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1659778394429</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,7 +518,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Adding utility class HttpErrorInfo closes #14" />
     <MESSAGE value="Adding utility class GlobalControllerExceptionHandler closes #12" />
     <MESSAGE value="Adding the api and util projects to the build.gradle file product-service closes #15" />
     <MESSAGE value="Enable Spring Boot's autoconfiguration feature to detect Spring Beans in the api and util closes #16" />
@@ -540,6 +542,7 @@
     <MESSAGE value="Adding devtools to product-service closes #31" />
     <MESSAGE value="API implementation of the composite microservice closes #32" />
     <MESSAGE value="Completes implementation of both the code and composite microservices closes #33" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completes implementation of both the code and composite microservices closes #33" />
+    <MESSAGE value="Adding annotation @ComponentScan() to the microservices product-composite-service, recommendation-service and review-service closes #34" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding annotation @ComponentScan() to the microservices product-composite-service, recommendation-service and review-service closes #34" />
   </component>
 </project>

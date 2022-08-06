@@ -19,82 +19,80 @@ import java.util.stream.Collectors;
  * Microservices-with-Spring-Boot-and-Spring-Cloud
  * Inside the package - de.oscharko.microservices.composite.product.services
  */
-@SuppressWarnings("ALL")
 @RestController
 public class ProductCompositeServiceImpl implements ProductCompositeService {
 
-    private final ServiceUtil serviceUtil;
-    private ProductCompositeIntegration integration;
+  private final ServiceUtil serviceUtil;
+  private final ProductCompositeIntegration integration;
 
-    @Autowired
-    public ProductCompositeServiceImpl(
-            ServiceUtil serviceUtil, ProductCompositeIntegration integration) {
+  @Autowired
+  public ProductCompositeServiceImpl(
+          ServiceUtil serviceUtil, ProductCompositeIntegration integration) {
 
-        this.serviceUtil = serviceUtil;
-        this.integration = integration;
+    this.serviceUtil = serviceUtil;
+    this.integration = integration;
+  }
+
+  /**
+   * Returns a response object of the ProductAggregate type based on the responses from the calls to the integration component
+   *
+   * @param productId
+   * @return
+   */
+  @Override
+  public ProductAggregate getProduct(int productId) {
+
+    Product product = integration.getProduct(productId);
+    if (product == null) {
+      throw new NotFoundException("No product found for productId: " + productId);
     }
 
-    /**
-     * Returns a response object of the ProductAggregate type based on the responses from the calls to the integration component
-     *
-     * @param productId
-     * @return
-     */
-    @Override
-    public ProductAggregate getProduct(int productId) {
+    List<Recommendation> recommendations = integration.getRecommendations(productId);
 
-        Product product = integration.getProduct(productId);
-        if (product == null) {
-            throw new NotFoundException("No product found for productId: " + productId);
-        }
+    List<Review> reviews = integration.getReviews(productId);
 
-        List<Recommendation> recommendations = integration.getRecommendations(productId);
+    return createProductAggregate(product, recommendations, reviews, serviceUtil.getServiceAddress());
+  }
 
-        List<Review> reviews = integration.getReviews(productId);
+  /**
+   * Creates a product aggregate for the given product
+   *
+   * @param product
+   * @param recommendations
+   * @param reviews
+   * @param serviceAddress
+   * @return
+   */
 
-        return createProductAggregate(product, recommendations, reviews, serviceUtil.getServiceAddress());
-    }
+  private ProductAggregate createProductAggregate(
+          Product product,
+          List<Recommendation> recommendations,
+          List<Review> reviews,
+          String serviceAddress) {
 
-    /**
-     * Creates a product aggregate for the given product
-     *
-     * @param product
-     * @param recommendations
-     * @param reviews
-     * @param serviceAddress
-     * @return
-     */
+    // 1. Setup product info
+    int productId = product.getProductId();
+    String name = product.getName();
+    int weight = product.getWeight();
 
-    private ProductAggregate createProductAggregate(
-            Product product,
-            List<Recommendation> recommendations,
-            List<Review> reviews,
-            String serviceAddress) {
+    // 2. Copy summary recommendation info, if available
+    List<RecommendationSummary> recommendationSummaries =
+            (recommendations == null) ? null : recommendations.stream()
+                    .map(r -> new RecommendationSummary(r.getRecommendationId(), r.getAuthor(), r.getRate()))
+                    .collect(Collectors.toList());
 
-        // 1. Setup product info
-        int productId = product.getProductId();
-        String name = product.getName();
-        int weight = product.getWeight();
+    // 3. Copy summary review info, if available
+    List<ReviewSummary> reviewSummaries =
+            (reviews == null) ? null : reviews.stream()
+                    .map(r -> new ReviewSummary(r.getReviewId(), r.getAuthor(), r.getSubject()))
+                    .collect(Collectors.toList());
 
-        // 2. Copy summary recommendation info, if available
-        List<RecommendationSummary> recommendationSummaries =
-                (recommendations == null) ? null : recommendations.stream()
-                        .map(r -> new RecommendationSummary(r.getRecommendationId(), r.getAuthor(), r.getRate()))
-                        .collect(Collectors.toList());
+    // 4. Create info regarding the involved microservices addresses
+    String productAddress = product.getServiceAddress();
+    String reviewAddress = (reviews != null && reviews.size() > 0) ? reviews.get(0).getServiceAddress() : "";
+    String recommendationAddress = (recommendations != null && recommendations.size() > 0) ? recommendations.get(0).getServiceAddress() : "";
+    ServiceAddresses serviceAddresses = new ServiceAddresses(serviceAddress, productAddress, reviewAddress, recommendationAddress);
 
-        // 3. Copy summary review info, if available
-        List<ReviewSummary> reviewSummaries =
-                (reviews == null) ? null : reviews.stream()
-                        .map(r -> new ReviewSummary(r.getReviewId(), r.getAuthor(), r.getSubject()))
-                        .collect(Collectors.toList());
-
-        // 4. Create info regarding the involved microservices addresses
-        String productAddress = product.getServiceAddress();
-        String reviewAddress = (reviews != null && reviews.size() > 0) ? reviews.get(0).getServiceAddress() : "";
-        String recommendationAddress = (recommendations != null && recommendations.size() > 0) ? recommendations.get(0).getServiceAddress() : "";
-        ServiceAddresses serviceAddresses = new ServiceAddresses(serviceAddress, productAddress, reviewAddress, recommendationAddress);
-
-        return new ProductAggregate(productId, name, weight, recommendationSummaries, reviewSummaries, serviceAddresses);
-    }
+    return new ProductAggregate(productId, name, weight, recommendationSummaries, reviewSummaries, serviceAddresses);
+  }
 }
-
