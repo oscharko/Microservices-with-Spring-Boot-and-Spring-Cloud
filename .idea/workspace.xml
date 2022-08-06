@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Create the constructor that’s stores the injected objects for building the URL's and implements the API methods for the three core services closes #30">
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding devtools to product-service closes #31">
+      <change afterPath="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/services/ProductCompositeServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/src/main/java/de/oscharko/util/http/ServiceUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/util/src/main/java/de/oscharko/util/http/ServiceUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +75,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2CnNMDzIxrJbQckRmAELYmXptjl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -88,6 +92,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -99,7 +104,10 @@
     "jdk.selected.JAVA_MODULE": "corretto-1.8",
     "last_opened_file_path": "/Users/oscharko/Development/Java/Books/Microservices-with-Spring-Boot-and-Spring-Cloud-2E/oscharko/Microservices-with-Spring-Boot-and-Spring-Cloud/product-service/src/main/resources",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Groovy",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "spring.configuration.checksum": "0fbf31652db4d11789be40be0ccc53da",
     "vue.rearranger.settings.migration": "true"
   }
@@ -178,7 +186,7 @@
       <workItem from="1659707487414" duration="432000" />
       <workItem from="1659707941592" duration="235000" />
       <workItem from="1659723847366" duration="64000" />
-      <workItem from="1659724053382" duration="1081000" />
+      <workItem from="1659724053382" duration="9079000" />
     </task>
     <task id="LOCAL-00001" summary="Adding microservice: product-service&#10;Adding microservice: review-service&#10;Adding microservice: recommendation-service&#10;Adding microservice: product-composite-service">
       <created>1659445587773</created>
@@ -460,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659692289640</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Adding devtools to product-service closes #31">
+      <created>1659725418596</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1659725418597</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,7 +498,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Definition from exceptions GET requests by invalid input exception closes #10" />
     <MESSAGE value="Definition from exceptions GET requests by not found exception closes #11" />
     <MESSAGE value="Adding utility class ServiceUtil #14" />
     <MESSAGE value="Adding utility class HttpErrorInfo closes #14" />
@@ -508,6 +522,7 @@
     <MESSAGE value="Implements the three core services in the product-composite-service closes #28" />
     <MESSAGE value="Injection of the integration component into the main application class closes #29" />
     <MESSAGE value="Create the constructor that’s stores the injected objects for building the URL's and implements the API methods for the three core services closes #30" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create the constructor that’s stores the injected objects for building the URL's and implements the API methods for the three core services closes #30" />
+    <MESSAGE value="Adding devtools to product-service closes #31" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding devtools to product-service closes #31" />
   </component>
 </project>
