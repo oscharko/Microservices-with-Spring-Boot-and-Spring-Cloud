@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Rework class ProductCompositeServiceImpl closes #35">
-      <change beforePath="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/services/ProductCompositeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/services/ProductCompositeServiceImpl.java" afterDir="false" />
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding missing descriptions in the class ProductCompositeServiceImpl closes #36">
+      <change beforePath="$PROJECT_DIR$/product-composite-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recommendation-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/recommendation-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/review-service/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +187,7 @@
       <workItem from="1659707487414" duration="432000" />
       <workItem from="1659707941592" duration="235000" />
       <workItem from="1659723847366" duration="64000" />
-      <workItem from="1659724053382" duration="13066000" />
+      <workItem from="1659724053382" duration="13295000" />
     </task>
     <task id="LOCAL-00001" summary="Adding microservice: product-service&#10;Adding microservice: review-service&#10;Adding microservice: recommendation-service&#10;Adding microservice: product-composite-service">
       <created>1659445587773</created>
@@ -502,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659778775109</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Adding missing descriptions in the class ProductCompositeServiceImpl closes #36">
+      <created>1659779029250</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1659779029250</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -525,7 +534,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Adding the api and util projects to the build.gradle file product-service closes #15" />
     <MESSAGE value="Enable Spring Boot's autoconfiguration feature to detect Spring Beans in the api and util closes #16" />
     <MESSAGE value="Rename group.id for the microservices product-service because using the wrong .bash file closes #17" />
     <MESSAGE value="Rename group.id for the microservices product-composite-service because using the wrong .bash file closes #18" />
@@ -550,6 +558,7 @@
     <MESSAGE value="Completes implementation of both the code and composite microservices closes #33" />
     <MESSAGE value="Adding annotation @ComponentScan() to the microservices product-composite-service, recommendation-service and review-service closes #34" />
     <MESSAGE value="Rework class ProductCompositeServiceImpl closes #35" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rework class ProductCompositeServiceImpl closes #35" />
+    <MESSAGE value="Adding missing descriptions in the class ProductCompositeServiceImpl closes #36" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding missing descriptions in the class ProductCompositeServiceImpl closes #36" />
   </component>
 </project>
