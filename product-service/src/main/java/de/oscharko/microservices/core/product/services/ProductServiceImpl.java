@@ -31,7 +31,7 @@ public class ProductServiceImpl implements ProductService {
     /**
      * Get the product from the request
      * @param productId ID of the product
-     * @return
+     * @return the product object
      */
 
     @Override
