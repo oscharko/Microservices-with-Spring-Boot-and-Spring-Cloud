@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Implement microservice review-service with class ReviewServiceImpl closes #40">
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding test method getProductById in microservice product-service closes #41">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/test/java/de/oscharko/microservices/core/product/ProductServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/test/java/de/oscharko/microservices/core/product/ProductServiceApplicationTests.java" afterDir="false" />
     </list>
@@ -131,7 +131,30 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ProductServiceApplicationTests.getProductById">
+  <component name="RunManager" selected="Gradle.ProductServiceApplicationTests">
+    <configuration name="ProductServiceApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":product-service:test" />
+            <option value="--tests" />
+            <option value="&quot;de.oscharko.microservices.core.product.ProductServiceApplicationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="ProductServiceApplicationTests.getProductById" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -146,6 +169,29 @@
             <option value=":product-service:test" />
             <option value="--tests" />
             <option value="&quot;de.oscharko.microservices.core.product.ProductServiceApplicationTests.getProductById&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductServiceApplicationTests.getProductNotFound" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":product-service:test" />
+            <option value="--tests" />
+            <option value="&quot;de.oscharko.microservices.core.product.ProductServiceApplicationTests.getProductNotFound&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -185,6 +231,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ProductServiceApplicationTests" />
+        <item itemvalue="Gradle.ProductServiceApplicationTests.getProductNotFound" />
         <item itemvalue="Gradle.ProductServiceApplicationTests.getProductById" />
       </list>
     </recent_temporary>
@@ -215,14 +263,7 @@
       <workItem from="1659707941592" duration="235000" />
       <workItem from="1659723847366" duration="64000" />
       <workItem from="1659724053382" duration="14124000" />
-      <workItem from="1659854635528" duration="4289000" />
-    </task>
-    <task id="LOCAL-00002" summary="Update start version closes #1">
-      <created>1659447671236</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1659447671236</updated>
+      <workItem from="1659854635528" duration="5739000" />
     </task>
     <task id="LOCAL-00003" summary="Adding README.md closes #2">
       <created>1659447851512</created>
@@ -560,7 +601,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659856126100</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Adding test method getProductById in microservice product-service closes #41">
+      <created>1659859956061</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1659859956061</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -583,7 +631,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Rename group.id for the microservices review-service because using the wrong .bash file closes #20" />
     <MESSAGE value="Create and implement the service implementation file for product-service closes #21" />
     <MESSAGE value="Wrong group.id and forget annotation closes #22" />
     <MESSAGE value="Set up runtime properties for microservice product-service closes #22" />
@@ -608,6 +655,7 @@
     <MESSAGE value="Change the ports for all microservices closes #38" />
     <MESSAGE value="Implement microservice recommendation-service with class RecommendationServiceImpl closes #39" />
     <MESSAGE value="Implement microservice review-service with class ReviewServiceImpl closes #40" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement microservice review-service with class ReviewServiceImpl closes #40" />
+    <MESSAGE value="Adding test method getProductById in microservice product-service closes #41" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding test method getProductById in microservice product-service closes #41" />
   </component>
 </project>
