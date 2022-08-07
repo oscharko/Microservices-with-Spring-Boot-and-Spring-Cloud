@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Rework the class ProductServiceApplicationTests closes #44">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-composite-service/src/test/java/de/oscharko/microservices/composite/product/ProductCompositeServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/src/test/java/de/oscharko/microservices/composite/product/ProductCompositeServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommendation-service/src/test/java/de/oscharko/microservices/core/recommendation/RecommendationServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/recommendation-service/src/test/java/de/oscharko/microservices/core/recommendation/RecommendationServiceApplicationTests.java" afterDir="false" />
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding the test methods to the class RecommendationServiceApplicationTests closes #45">
+      <change beforePath="$PROJECT_DIR$/review-service/src/test/java/de/oscharko/microservices/core/review/ReviewServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/review-service/src/test/java/de/oscharko/microservices/core/review/ReviewServiceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +130,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.RecommendationServiceApplicationTests">
+  <component name="RunManager" selected="Gradle.ReviewServiceApplicationTests">
     <configuration name="ProductCompositeServiceApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -170,29 +168,6 @@
             <option value=":product-service:test" />
             <option value="--tests" />
             <option value="&quot;de.oscharko.microservices.core.product.ProductServiceApplicationTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ProductServiceApplicationTests.getProductById" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":product-service:test" />
-            <option value="--tests" />
-            <option value="&quot;de.oscharko.microservices.core.product.ProductServiceApplicationTests.getProductById&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -248,6 +223,29 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="ReviewServiceApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":review-service:test" />
+            <option value="--tests" />
+            <option value="&quot;de.oscharko.microservices.core.review.ReviewServiceApplicationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="ProductCompositeServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Microservices-with-Spring-Boot-and-Spring-Cloud.product-composite-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="de.oscharko.microservices.composite.product.ProductCompositeServiceApplication" />
@@ -278,11 +276,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ReviewServiceApplicationTests" />
         <item itemvalue="Gradle.RecommendationServiceApplicationTests" />
         <item itemvalue="Gradle.ProductCompositeServiceApplicationTests" />
         <item itemvalue="Gradle.ProductServiceApplicationTests" />
         <item itemvalue="Gradle.ProductServiceApplicationTests.getProductNotFound" />
-        <item itemvalue="Gradle.ProductServiceApplicationTests.getProductById" />
       </list>
     </recent_temporary>
   </component>
@@ -312,14 +310,7 @@
       <workItem from="1659707941592" duration="235000" />
       <workItem from="1659723847366" duration="64000" />
       <workItem from="1659724053382" duration="14124000" />
-      <workItem from="1659854635528" duration="10255000" />
-    </task>
-    <task id="LOCAL-00006" summary="Changes workspace">
-      <created>1659525311889</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1659525311889</updated>
+      <workItem from="1659854635528" duration="10621000" />
     </task>
     <task id="LOCAL-00007" summary="Changes workspace">
       <created>1659525592431</created>
@@ -657,7 +648,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659864305974</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Adding the test methods to the class RecommendationServiceApplicationTests closes #45">
+      <created>1659866045114</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1659866045114</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -680,7 +678,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Set up runtime properties and logging behaviour (dev) for microservice product-service closes #23" />
     <MESSAGE value="update .gitignore" />
     <MESSAGE value="delete logs folder" />
     <MESSAGE value="Changes group.id" />
@@ -705,6 +702,7 @@
     <MESSAGE value="Adding test method getProductNotFound in microservice product-service closes #42" />
     <MESSAGE value="Implement automated integration tests on the composite product API closes #43" />
     <MESSAGE value="Rework the class ProductServiceApplicationTests closes #44" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rework the class ProductServiceApplicationTests closes #44" />
+    <MESSAGE value="Adding the test methods to the class RecommendationServiceApplicationTests closes #45" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding the test methods to the class RecommendationServiceApplicationTests closes #45" />
   </component>
 </project>
