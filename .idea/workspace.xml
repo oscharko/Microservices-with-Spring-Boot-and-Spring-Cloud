@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding missing descriptions in the class ProductCompositeServiceImpl closes #36">
-      <change beforePath="$PROJECT_DIR$/product-composite-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/build.gradle" afterDir="false" />
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Change the ports for all microservices closes #38">
+      <change afterPath="$PROJECT_DIR$/recommendation-service/src/main/java/de/oscharko/microservices/core/recommendation/services/RecommendationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/services/ProductCompositeIntegration.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/services/ProductCompositeIntegration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recommendation-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/recommendation-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/review-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/review-service/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,29 +90,29 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "corretto-1.8",
-    "last_opened_file_path": "/Users/oscharko/Development/Java/Books/Microservices-with-Spring-Boot-and-Spring-Cloud-2E/oscharko/Microservices-with-Spring-Boot-and-Spring-Cloud/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/services",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "0fbf31652db4d11789be40be0ccc53da",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/oscharko/Development/Java/Books/Microservices-with-Spring-Boot-and-Spring-Cloud-2E/oscharko/Microservices-with-Spring-Boot-and-Spring-Cloud/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/services&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;0fbf31652db4d11789be40be0ccc53da&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/services" />
@@ -187,7 +188,8 @@
       <workItem from="1659707487414" duration="432000" />
       <workItem from="1659707941592" duration="235000" />
       <workItem from="1659723847366" duration="64000" />
-      <workItem from="1659724053382" duration="13295000" />
+      <workItem from="1659724053382" duration="14124000" />
+      <workItem from="1659854635528" duration="1072000" />
     </task>
     <task id="LOCAL-00001" summary="Adding microservice: product-service&#10;Adding microservice: review-service&#10;Adding microservice: recommendation-service&#10;Adding microservice: product-composite-service">
       <created>1659445587773</created>
@@ -511,7 +513,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659779029250</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Adding devtools to the microservices product-composite-service, recommendation-service and review-service closes #37">
+      <created>1659779267961</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1659779267961</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Change the ports for all microservices closes #38">
+      <created>1659779505559</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1659779505559</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,8 +550,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Enable Spring Boot's autoconfiguration feature to detect Spring Beans in the api and util closes #16" />
-    <MESSAGE value="Rename group.id for the microservices product-service because using the wrong .bash file closes #17" />
     <MESSAGE value="Rename group.id for the microservices product-composite-service because using the wrong .bash file closes #18" />
     <MESSAGE value="Rename group.id for the microservices recommendation-service because using the wrong .bash file closes #19" />
     <MESSAGE value="Rename group.id for the microservices review-service because using the wrong .bash file closes #20" />
@@ -559,6 +573,8 @@
     <MESSAGE value="Adding annotation @ComponentScan() to the microservices product-composite-service, recommendation-service and review-service closes #34" />
     <MESSAGE value="Rework class ProductCompositeServiceImpl closes #35" />
     <MESSAGE value="Adding missing descriptions in the class ProductCompositeServiceImpl closes #36" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding missing descriptions in the class ProductCompositeServiceImpl closes #36" />
+    <MESSAGE value="Adding devtools to the microservices product-composite-service, recommendation-service and review-service closes #37" />
+    <MESSAGE value="Change the ports for all microservices closes #38" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change the ports for all microservices closes #38" />
   </component>
 </project>

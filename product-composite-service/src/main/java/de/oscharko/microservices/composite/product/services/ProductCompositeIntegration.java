@@ -60,9 +60,9 @@ public class ProductCompositeIntegration implements ProductService, Recommendati
         this.restTemplate = restTemplate;
         this.mapper = mapper;
 
-        productServiceUrl = "https://" + productServiceHost + ":" + productServicePort + "/product/";
-        recommendationServiceUrl = "https://" + recommendationServiceHost + ":" + recommendationServicePort + "/recommendation?productId=";
-        reviewServiceUrl = "https://" + reviewServiceHost + ":" + reviewServicePort + "/review?productId=";
+        productServiceUrl = "http://" + productServiceHost + ":" + productServicePort + "/product/";
+        recommendationServiceUrl = "http://" + recommendationServiceHost + ":" + recommendationServicePort + "/recommendation?productId=";
+        reviewServiceUrl = "http://" + reviewServiceHost + ":" + reviewServicePort + "/review?productId=";
     }
 
     /**
