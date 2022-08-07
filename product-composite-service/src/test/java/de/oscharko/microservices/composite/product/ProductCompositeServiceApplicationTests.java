@@ -22,8 +22,8 @@ import static org.springframework.http.MediaType.APPLICATION_JSON;
 class ProductCompositeServiceApplicationTests {
 
 	private static final int PRODUCT_ID_OK = 1;
-	private static final int PRODUCT_ID_NOT_FOUND = 2;
-	private static final int PRODUCT_ID_INVALID = 3;
+	private static final int PRODUCT_ID_NOT_FOUND = 13;
+	private static final int PRODUCT_ID_INVALID = -1;
 
 	@Autowired
 	private WebTestClient client;
