@@ -43,3 +43,6 @@ bin/
 
 ### Spring ###
 logs/
+
+### app commands ###
+app-commands/
