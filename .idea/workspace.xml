@@ -4,29 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Create a Dockerfile that we will use to build the Docker image for the microservice product-service &quot;docker&quot; closes #49">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-composite-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommendation-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/review-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding docker compose for managing the microservice landscape closes #50">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/api/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/test/java/de/oscharko/api/ApiApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-composite-service/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-composite-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommendation-service/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/recommendation-service/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommendation-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/recommendation-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/review-service/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/review-service/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/review-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/review-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/src/test/java/de/oscharko/util/UtilApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-em-all.bash" beforeDir="false" afterPath="$PROJECT_DIR$/test-em-all.bash" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -350,14 +330,7 @@
       <workItem from="1659964784592" duration="862000" />
       <workItem from="1659965844185" duration="1217000" />
       <workItem from="1659967161108" duration="119000" />
-      <workItem from="1659967310554" duration="1604000" />
-    </task>
-    <task id="LOCAL-00011" summary="Adding core api service for recommendation microservice closes #7">
-      <created>1659530097143</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1659530097143</updated>
+      <workItem from="1659967310554" duration="2642000" />
     </task>
     <task id="LOCAL-00012" summary="Adding explain-field">
       <created>1659530125454</created>
@@ -695,7 +668,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659958794980</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Adding docker compose for managing the microservice landscape closes #50">
+      <created>1659969165590</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1659969165590</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -718,7 +698,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Set up runtime properties and logging behaviour (dev) for microservice product-composite-service closes #25" />
     <MESSAGE value="Set up runtime properties and logging behaviour (dev) for microservice recommendation-service closes #26" />
     <MESSAGE value="Set up runtime properties and logging behaviour (dev) for microservice review-service closes #27" />
     <MESSAGE value="Implements the three core services in the product-composite-service closes #28" />
@@ -743,6 +722,7 @@
     <MESSAGE value="Adding semi-automated tests for the microservices with bash script closes #47" />
     <MESSAGE value="Creating in the microservice product-service a new profile called &quot;docker&quot; closes #48" />
     <MESSAGE value="Create a Dockerfile that we will use to build the Docker image for the microservice product-service &quot;docker&quot; closes #49" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create a Dockerfile that we will use to build the Docker image for the microservice product-service &quot;docker&quot; closes #49" />
+    <MESSAGE value="Adding docker compose for managing the microservice landscape closes #50" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding docker compose for managing the microservice landscape closes #50" />
   </component>
 </project>
