@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding semi-automated tests for the microservices with bash script closes #47">
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Create a Dockerfile that we will use to build the Docker image for the microservice product-service &quot;docker&quot; closes #49">
+      <change afterPath="$PROJECT_DIR$/product-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/docker-commands.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/test/java/de/oscharko/microservices/core/product/ProductServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/test/java/de/oscharko/microservices/core/product/ProductServiceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +48,12 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/product-service">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/product-composite-service">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -64,6 +73,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -88,31 +98,32 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "corretto-1.8",
-    "last_opened_file_path": "/Users/oscharko/Development/Java/Books/Microservices-with-Spring-Boot-and-Spring-Cloud-2E/oscharko/Microservices-with-Spring-Boot-and-Spring-Cloud",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "0fbf31652db4d11789be40be0ccc53da",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/oscharko/Development/Java/Books/Microservices-with-Spring-Boot-and-Spring-Cloud-2E/oscharko/Microservices-with-Spring-Boot-and-Spring-Cloud/product-service&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;f75272ad2ee3136e21748761643e8fe9&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/product-service" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/services" />
       <recent name="$PROJECT_DIR$/product-service/src/main/resources" />
@@ -122,6 +133,8 @@
     <option name="myCommands">
       <command value="gradle " />
       <command value="gradle api:clean" />
+      <command value="gradle api:build" />
+      <command value="gradle api:test" />
     </option>
   </component>
   <component name="RunDashboard">
@@ -131,8 +144,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ReviewServiceApplicationTests">
-    <configuration name="ProductCompositeServiceApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.Microservices-with-Spring-Boot-and-Spring-Cloud [api:test]">
+    <configuration name="Microservices-with-Spring-Boot-and-Spring-Cloud [api:build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -143,14 +156,75 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":product-composite-service:test" />
-            <option value="--tests" />
-            <option value="&quot;de.oscharko.microservices.composite.product.ProductCompositeServiceApplicationTests&quot;" />
+            <option value="api:build" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Microservices-with-Spring-Boot-and-Spring-Cloud [api:clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="api:clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Microservices-with-Spring-Boot-and-Spring-Cloud [api:test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="api:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Microservices-with-Spring-Boot-and-Spring-Cloud:product-service [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/product-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -169,75 +243,6 @@
             <option value=":product-service:test" />
             <option value="--tests" />
             <option value="&quot;de.oscharko.microservices.core.product.ProductServiceApplicationTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ProductServiceApplicationTests.getProductNotFound" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":product-service:test" />
-            <option value="--tests" />
-            <option value="&quot;de.oscharko.microservices.core.product.ProductServiceApplicationTests.getProductNotFound&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="RecommendationServiceApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":recommendation-service:test" />
-            <option value="--tests" />
-            <option value="&quot;de.oscharko.microservices.core.recommendation.RecommendationServiceApplicationTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ReviewServiceApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":review-service:test" />
-            <option value="--tests" />
-            <option value="&quot;de.oscharko.microservices.core.review.ReviewServiceApplicationTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -277,11 +282,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ReviewServiceApplicationTests" />
-        <item itemvalue="Gradle.RecommendationServiceApplicationTests" />
-        <item itemvalue="Gradle.ProductCompositeServiceApplicationTests" />
+        <item itemvalue="Gradle.Microservices-with-Spring-Boot-and-Spring-Cloud [api:test]" />
+        <item itemvalue="Gradle.Microservices-with-Spring-Boot-and-Spring-Cloud [api:build]" />
+        <item itemvalue="Gradle.Microservices-with-Spring-Boot-and-Spring-Cloud:product-service [build]" />
+        <item itemvalue="Gradle.Microservices-with-Spring-Boot-and-Spring-Cloud [api:clean]" />
         <item itemvalue="Gradle.ProductServiceApplicationTests" />
-        <item itemvalue="Gradle.ProductServiceApplicationTests.getProductNotFound" />
       </list>
     </recent_temporary>
   </component>
@@ -311,14 +316,9 @@
       <workItem from="1659707941592" duration="235000" />
       <workItem from="1659723847366" duration="64000" />
       <workItem from="1659724053382" duration="14124000" />
-      <workItem from="1659854635528" duration="13349000" />
-    </task>
-    <task id="LOCAL-00009" summary="Adding product composite service closes #5">
-      <created>1659528241007</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1659528241007</updated>
+      <workItem from="1659854635528" duration="14341000" />
+      <workItem from="1659949428979" duration="1956000" />
+      <workItem from="1659956268215" duration="2228000" />
     </task>
     <task id="LOCAL-00010" summary="Core api service for product microservice closes #6">
       <created>1659529308284</created>
@@ -656,7 +656,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659879932378</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Creating in the microservice product-service a new profile called &quot;docker&quot; closes #48">
+      <created>1659946549610</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1659946549610</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -679,7 +686,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Changes group.id" />
     <MESSAGE value="Disabled the creation of the new plain jar file closes #24" />
     <MESSAGE value="Set up runtime properties and logging behaviour (dev) for microservice product-composite-service closes #25" />
     <MESSAGE value="Set up runtime properties and logging behaviour (dev) for microservice recommendation-service closes #26" />
@@ -704,6 +710,7 @@
     <MESSAGE value="Adding the test methods to the class RecommendationServiceApplicationTests closes #45" />
     <MESSAGE value="Adding the test methods to the class ReviewServiceApplicationTests closes #46" />
     <MESSAGE value="Adding semi-automated tests for the microservices with bash script closes #47" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding semi-automated tests for the microservices with bash script closes #47" />
+    <MESSAGE value="Creating in the microservice product-service a new profile called &quot;docker&quot; closes #48" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating in the microservice product-service a new profile called &quot;docker&quot; closes #48" />
   </component>
 </project>
