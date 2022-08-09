@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Update the .bash test file for automatic testing the microservice landscape with containers closes #51">
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding open api to build file from the api library closes #52">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/api/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/composite/product/ProductCompositeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/composite/product/ProductCompositeService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,29 +95,29 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/oscharko/Development/Java/Books/Microservices-with-Spring-Boot-and-Spring-Cloud-2E/oscharko/Microservices-with-Spring-Boot-and-Spring-Cloud/util&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;97521d08199fa9119707342c045bd50b&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-1.8",
+    "last_opened_file_path": "/Users/oscharko/Development/Java/Books/Microservices-with-Spring-Boot-and-Spring-Cloud-2E/oscharko/Microservices-with-Spring-Boot-and-Spring-Cloud/util",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "f75272ad2ee3136e21748761643e8fe9",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/util" />
@@ -326,14 +326,7 @@
       <workItem from="1659965844185" duration="1217000" />
       <workItem from="1659967161108" duration="119000" />
       <workItem from="1659967310554" duration="3821000" />
-      <workItem from="1660049559794" duration="19000" />
-    </task>
-    <task id="LOCAL-00013" summary="Adding core api service for review microservice closes #8">
-      <created>1659530527193</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1659530527193</updated>
+      <workItem from="1660049559794" duration="1025000" />
     </task>
     <task id="LOCAL-00014" summary="Remove null declaration from core api product and recommendation because NullPointerException closes #9">
       <created>1659530852198</created>
@@ -671,7 +664,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659970071102</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Adding open api to build file from the api library closes #52">
+      <created>1660049703051</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1660049703051</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -694,7 +694,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Set up runtime properties and logging behaviour (dev) for microservice review-service closes #27" />
     <MESSAGE value="Implements the three core services in the product-composite-service closes #28" />
     <MESSAGE value="Injection of the integration component into the main application class closes #29" />
     <MESSAGE value="Create the constructor that’s stores the injected objects for building the URL's and implements the API methods for the three core services closes #30" />
@@ -719,6 +718,7 @@
     <MESSAGE value="Create a Dockerfile that we will use to build the Docker image for the microservice product-service &quot;docker&quot; closes #49" />
     <MESSAGE value="Adding docker compose for managing the microservice landscape closes #50" />
     <MESSAGE value="Update the .bash test file for automatic testing the microservice landscape with containers closes #51" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update the .bash test file for automatic testing the microservice landscape with containers closes #51" />
+    <MESSAGE value="Adding open api to build file from the api library closes #52" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding open api to build file from the api library closes #52" />
   </component>
 </project>
