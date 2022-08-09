@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Update the version from open api in the microservice product-composite-service closes #56">
-      <change beforePath="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/ProductCompositeServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/ProductCompositeServiceApplication.java" afterDir="false" />
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding the open api documentation api to the class ProductCompositeServiceApplication closes #57">
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/exceptions/BadRequestException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -325,14 +325,7 @@
       <workItem from="1659965844185" duration="1217000" />
       <workItem from="1659967161108" duration="119000" />
       <workItem from="1659967310554" duration="3821000" />
-      <workItem from="1660049559794" duration="3185000" />
-    </task>
-    <task id="LOCAL-00019" summary="Adding utility class GlobalControllerExceptionHandler closes #12">
-      <created>1659601777986</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1659601777986</updated>
+      <workItem from="1660049559794" duration="3568000" />
     </task>
     <task id="LOCAL-00020" summary="Adding the api and util projects to the build.gradle file product-service closes #15">
       <created>1659604236388</created>
@@ -670,7 +663,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660071490435</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Adding the open api documentation api to the class ProductCompositeServiceApplication closes #57">
+      <created>1660071813965</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1660071813965</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -693,7 +693,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="API implementation of the composite microservice closes #32" />
     <MESSAGE value="Completes implementation of both the code and composite microservices closes #33" />
     <MESSAGE value="Adding annotation @ComponentScan() to the microservices product-composite-service, recommendation-service and review-service closes #34" />
     <MESSAGE value="Rework class ProductCompositeServiceImpl closes #35" />
@@ -718,6 +717,7 @@
     <MESSAGE value="Adding open api to build file from the microservice product-composite-service closes #54" />
     <MESSAGE value="Update the version from open api in the library api closes #55" />
     <MESSAGE value="Update the version from open api in the microservice product-composite-service closes #56" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update the version from open api in the microservice product-composite-service closes #56" />
+    <MESSAGE value="Adding the open api documentation api to the class ProductCompositeServiceApplication closes #57" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding the open api documentation api to the class ProductCompositeServiceApplication closes #57" />
   </component>
 </project>
