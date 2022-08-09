@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding the open api documentation api to the class ProductCompositeServiceApplication closes #57">
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/exceptions/BadRequestException.java" afterDir="false" />
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding a bad exception class to the api library closes #58">
+      <change beforePath="$PROJECT_DIR$/util/src/main/java/de/oscharko/util/http/GlobalControllerExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/util/src/main/java/de/oscharko/util/http/GlobalControllerExceptionHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -325,14 +325,7 @@
       <workItem from="1659965844185" duration="1217000" />
       <workItem from="1659967161108" duration="119000" />
       <workItem from="1659967310554" duration="3821000" />
-      <workItem from="1660049559794" duration="3568000" />
-    </task>
-    <task id="LOCAL-00020" summary="Adding the api and util projects to the build.gradle file product-service closes #15">
-      <created>1659604236388</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1659604236388</updated>
+      <workItem from="1660049559794" duration="3934000" />
     </task>
     <task id="LOCAL-00021" summary="Enable Spring Boot's autoconfiguration feature to detect Spring Beans in the api and util closes #16">
       <created>1659604410489</created>
@@ -670,7 +663,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660071813965</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Adding a bad exception class to the api library closes #58">
+      <created>1660072238793</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1660072238793</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -693,7 +693,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Completes implementation of both the code and composite microservices closes #33" />
     <MESSAGE value="Adding annotation @ComponentScan() to the microservices product-composite-service, recommendation-service and review-service closes #34" />
     <MESSAGE value="Rework class ProductCompositeServiceImpl closes #35" />
     <MESSAGE value="Adding missing descriptions in the class ProductCompositeServiceImpl closes #36" />
@@ -718,6 +717,7 @@
     <MESSAGE value="Update the version from open api in the library api closes #55" />
     <MESSAGE value="Update the version from open api in the microservice product-composite-service closes #56" />
     <MESSAGE value="Adding the open api documentation api to the class ProductCompositeServiceApplication closes #57" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding the open api documentation api to the class ProductCompositeServiceApplication closes #57" />
+    <MESSAGE value="Adding a bad exception class to the api library closes #58" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding a bad exception class to the api library closes #58" />
   </component>
 </project>
