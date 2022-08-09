@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding open api to build file from the api library closes #52">
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding the swagger description to interface ProductCompositeService in the api library closes #53">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/composite/product/ProductCompositeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/composite/product/ProductCompositeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/api/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-composite-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/ProductCompositeServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/ProductCompositeServiceApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +71,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="package-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -113,7 +115,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "spring.configuration.checksum": "f75272ad2ee3136e21748761643e8fe9",
     "vue.rearranger.settings.migration": "true"
   }
@@ -326,14 +328,7 @@
       <workItem from="1659965844185" duration="1217000" />
       <workItem from="1659967161108" duration="119000" />
       <workItem from="1659967310554" duration="3821000" />
-      <workItem from="1660049559794" duration="1025000" />
-    </task>
-    <task id="LOCAL-00014" summary="Remove null declaration from core api product and recommendation because NullPointerException closes #9">
-      <created>1659530852198</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1659530852198</updated>
+      <workItem from="1660049559794" duration="2357000" />
     </task>
     <task id="LOCAL-00015" summary="Definition from exceptions GET requests by invalid input exception closes #10">
       <created>1659531434824</created>
@@ -671,7 +666,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660049703051</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Adding the swagger description to interface ProductCompositeService in the api library closes #53">
+      <created>1660067631159</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1660067631159</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -694,7 +696,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Implements the three core services in the product-composite-service closes #28" />
     <MESSAGE value="Injection of the integration component into the main application class closes #29" />
     <MESSAGE value="Create the constructor that’s stores the injected objects for building the URL's and implements the API methods for the three core services closes #30" />
     <MESSAGE value="Adding devtools to product-service closes #31" />
@@ -719,6 +720,7 @@
     <MESSAGE value="Adding docker compose for managing the microservice landscape closes #50" />
     <MESSAGE value="Update the .bash test file for automatic testing the microservice landscape with containers closes #51" />
     <MESSAGE value="Adding open api to build file from the api library closes #52" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding open api to build file from the api library closes #52" />
+    <MESSAGE value="Adding the swagger description to interface ProductCompositeService in the api library closes #53" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding the swagger description to interface ProductCompositeService in the api library closes #53" />
   </component>
 </project>
