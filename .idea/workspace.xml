@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding bad requests exception to the util microservice class GlobalControllerExceptionHandler closes #59">
+    <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="Adding app commands">
+      <change afterPath="$PROJECT_DIR$/app-commands/docker.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-commands/gradlew.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-composite-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,11 +110,15 @@
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "corretto-1.8",
     "last_opened_file_path": "/Users/oscharko/Development/Java/Books/Microservices-with-Spring-Boot-and-Spring-Cloud-2E/oscharko/Microservices-with-Spring-Boot-and-Spring-Cloud/util",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "spring.configuration.checksum": "f75272ad2ee3136e21748761643e8fe9",
     "vue.rearranger.settings.migration": "true"
   }
@@ -327,6 +332,7 @@
       <workItem from="1659967161108" duration="119000" />
       <workItem from="1659967310554" duration="3821000" />
       <workItem from="1660049559794" duration="5880000" />
+      <workItem from="1660240076372" duration="577000" />
     </task>
     <task id="LOCAL-00022" summary="Rename group.id for the microservices product-service because using the wrong .bash file closes #17">
       <created>1659604653127</created>
@@ -694,7 +700,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Rework class ProductCompositeServiceImpl closes #35" />
     <MESSAGE value="Adding missing descriptions in the class ProductCompositeServiceImpl closes #36" />
     <MESSAGE value="Adding devtools to the microservices product-composite-service, recommendation-service and review-service closes #37" />
     <MESSAGE value="Change the ports for all microservices closes #38" />
@@ -719,6 +724,7 @@
     <MESSAGE value="Adding the open api documentation api to the class ProductCompositeServiceApplication closes #57" />
     <MESSAGE value="Adding a bad exception class to the api library closes #58" />
     <MESSAGE value="Adding bad requests exception to the util microservice class GlobalControllerExceptionHandler closes #59" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding bad requests exception to the util microservice class GlobalControllerExceptionHandler closes #59" />
+    <MESSAGE value="Adding app commands" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding app commands" />
   </component>
 </project>
