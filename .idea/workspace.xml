@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -332,14 +331,9 @@
       <workItem from="1659967310554" duration="3821000" />
       <workItem from="1660049559794" duration="5880000" />
       <workItem from="1660240076372" duration="1990000" />
-      <workItem from="1660251051134" duration="2152000" />
-    </task>
-    <task id="LOCAL-00024" summary="Rename group.id for the microservices recommendation-service because using the wrong .bash file closes #19">
-      <created>1659604954094</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1659604954094</updated>
+      <workItem from="1660251051134" duration="2733000" />
+      <workItem from="1661003686821" duration="240000" />
+      <workItem from="1661007541682" duration="35000" />
     </task>
     <task id="LOCAL-00025" summary="Rename group.id for the microservices review-service because using the wrong .bash file closes #20">
       <created>1659605025324</created>
@@ -677,7 +671,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660241008347</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Adding databases mongoDB and mySQL to the docker-compose closes #61">
+      <created>1660304959480</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1660304959480</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -700,7 +701,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Adding devtools to the microservices product-composite-service, recommendation-service and review-service closes #37" />
     <MESSAGE value="Change the ports for all microservices closes #38" />
     <MESSAGE value="Implement microservice recommendation-service with class RecommendationServiceImpl closes #39" />
     <MESSAGE value="Implement microservice review-service with class ReviewServiceImpl closes #40" />
@@ -725,6 +725,7 @@
     <MESSAGE value="Adding bad requests exception to the util microservice class GlobalControllerExceptionHandler closes #59" />
     <MESSAGE value="Adding app commands" />
     <MESSAGE value="Adding new command to docker commands" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding new command to docker commands" />
+    <MESSAGE value="Adding databases mongoDB and mySQL to the docker-compose closes #61" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding databases mongoDB and mySQL to the docker-compose closes #61" />
   </component>
 </project>
