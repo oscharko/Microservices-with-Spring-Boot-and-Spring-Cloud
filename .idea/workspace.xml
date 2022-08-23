@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/composite/product/ProductCompositeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/composite/product/ProductCompositeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/composite/product/RecommendationSummary.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/composite/product/RecommendationSummary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -337,14 +337,7 @@
       <workItem from="1661007541682" duration="468000" />
       <workItem from="1661158633458" duration="2670000" />
       <workItem from="1661166121461" duration="473000" />
-      <workItem from="1661238898432" duration="1508000" />
-    </task>
-    <task id="LOCAL-00028" summary="Set up runtime properties for microservice product-service closes #22">
-      <created>1659614137119</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1659614137119</updated>
+      <workItem from="1661238898432" duration="2424000" />
     </task>
     <task id="LOCAL-00029" summary="Set up runtime properties and logging behaviour (dev) for microservice product-service closes #23">
       <created>1659615348438</created>
@@ -682,7 +675,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661160777741</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Adding post and delete mapping to product composite service closes #64">
+      <created>1661242749357</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1661242749357</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -705,7 +705,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Adding test method getProductById in microservice product-service closes #41" />
     <MESSAGE value="Adding test method getProductNotFound in microservice product-service closes #42" />
     <MESSAGE value="Implement automated integration tests on the composite product API closes #43" />
     <MESSAGE value="Rework the class ProductServiceApplicationTests closes #44" />
@@ -730,6 +729,7 @@
     <MESSAGE value="Chang docker-compose.yml version" />
     <MESSAGE value="Extend the test-em-all.bash file closes #62" />
     <MESSAGE value="Explicit a default constructor for the api class ProductAggregate closes #63" />
-    <option name="LAST_COMMIT_MESSAGE" value="Explicit a default constructor for the api class ProductAggregate closes #63" />
+    <MESSAGE value="Adding post and delete mapping to product composite service closes #64" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding post and delete mapping to product composite service closes #64" />
   </component>
 </project>
