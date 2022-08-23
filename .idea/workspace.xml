@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/core/product/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/core/product/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/core/recommendation/Recommendation.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/core/recommendation/Recommendation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -337,14 +336,7 @@
       <workItem from="1661007541682" duration="468000" />
       <workItem from="1661158633458" duration="2670000" />
       <workItem from="1661166121461" duration="473000" />
-      <workItem from="1661238898432" duration="4565000" />
-    </task>
-    <task id="LOCAL-00033" summary="Disabled the creation of the new plain jar file closes #24">
-      <created>1659616452672</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1659616452672</updated>
+      <workItem from="1661238898432" duration="4881000" />
     </task>
     <task id="LOCAL-00034" summary="Set up runtime properties and logging behaviour (dev) for microservice product-composite-service closes #25">
       <created>1659688823601</created>
@@ -682,7 +674,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661244557320</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Adding post and delete mapping to product service closes #68">
+      <created>1661256654763</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1661256654763</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -705,7 +704,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Adding the test methods to the class ReviewServiceApplicationTests closes #46" />
     <MESSAGE value="Adding semi-automated tests for the microservices with bash script closes #47" />
     <MESSAGE value="Creating in the microservice product-service a new profile called &quot;docker&quot; closes #48" />
     <MESSAGE value="Create a Dockerfile that we will use to build the Docker image for the microservice product-service &quot;docker&quot; closes #49" />
@@ -730,6 +728,7 @@
     <MESSAGE value="Adding content variable to review class closes #65" />
     <MESSAGE value="Adding content variable to review class closes #66" />
     <MESSAGE value="Change the argument status in the product class from constant to variable and adding setters for all arguments closes #67" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change the argument status in the product class from constant to variable and adding setters for all arguments closes #67" />
+    <MESSAGE value="Adding post and delete mapping to product service closes #68" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding post and delete mapping to product service closes #68" />
   </component>
 </project>
