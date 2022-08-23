@@ -84,7 +84,7 @@ public class ProductCompositeServiceImpl implements ProductCompositeService {
     // 3. Copy summary review info, if available
     List<ReviewSummary> reviewSummaries =
             (reviews == null) ? null : reviews.stream()
-                    .map(r -> new ReviewSummary(r.getReviewId(), r.getAuthor(), r.getSubject()))
+                    .map(r -> new ReviewSummary(r.getReviewId(), r.getAuthor(), r.getSubject(), content))
                     .collect(Collectors.toList());
 
     // 4. Create info regarding the involved microservices addresses
