@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/core/recommendation/RecommendationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/core/recommendation/RecommendationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/core/review/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/core/review/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/core/review/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/de/oscharko/api/core/review/ReviewService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -338,14 +337,7 @@
       <workItem from="1661007541682" duration="468000" />
       <workItem from="1661158633458" duration="2670000" />
       <workItem from="1661166121461" duration="473000" />
-      <workItem from="1661238898432" duration="5738000" />
-    </task>
-    <task id="LOCAL-00035" summary="Set up runtime properties and logging behaviour (dev) for microservice product-composite-service closes #25">
-      <created>1659688948732</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1659688948732</updated>
+      <workItem from="1661238898432" duration="6403000" />
     </task>
     <task id="LOCAL-00036" summary="Set up runtime properties and logging behaviour (dev) for microservice recommendation-service closes #26">
       <created>1659689074313</created>
@@ -683,7 +675,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661257081574</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="Change the argument status in the review class from constant to variable and adding setters for all arguments closes #70">
+      <created>1661258146628</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1661258146629</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -706,7 +705,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Creating in the microservice product-service a new profile called &quot;docker&quot; closes #48" />
     <MESSAGE value="Create a Dockerfile that we will use to build the Docker image for the microservice product-service &quot;docker&quot; closes #49" />
     <MESSAGE value="Adding docker compose for managing the microservice landscape closes #50" />
     <MESSAGE value="Update the .bash test file for automatic testing the microservice landscape with containers closes #51" />
@@ -731,6 +729,7 @@
     <MESSAGE value="Change the argument status in the product class from constant to variable and adding setters for all arguments closes #67" />
     <MESSAGE value="Adding post and delete mapping to product service closes #68" />
     <MESSAGE value="Change the argument status in the recommendation class from constant to variable and adding setters for all arguments closes #69" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change the argument status in the recommendation class from constant to variable and adding setters for all arguments closes #69" />
+    <MESSAGE value="Change the argument status in the review class from constant to variable and adding setters for all arguments closes #70" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change the argument status in the review class from constant to variable and adding setters for all arguments closes #70" />
   </component>
 </project>
