@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/product-composite-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-composite-service/src/test/java/de/oscharko/microservices/composite/product/ProductCompositeServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/src/test/java/de/oscharko/microservices/composite/product/ProductCompositeServiceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -337,14 +337,7 @@
       <workItem from="1661158633458" duration="2670000" />
       <workItem from="1661166121461" duration="473000" />
       <workItem from="1661238898432" duration="7936000" />
-      <workItem from="1661326087614" duration="3196000" />
-    </task>
-    <task id="LOCAL-00039" summary="Injection of the integration component into the main application class closes #29">
-      <created>1659690658785</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1659690658785</updated>
+      <workItem from="1661326087614" duration="3738000" />
     </task>
     <task id="LOCAL-00040" summary="Create the constructor that’s stores the injected objects for building the URL's and implements the API methods for the three core services closes #30">
       <created>1659692289640</created>
@@ -682,7 +675,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661332161246</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="Update the application.yml from the microservice product composite closes #74">
+      <created>1661332542233</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1661332542234</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -705,7 +705,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Adding open api to build file from the api library closes #52" />
     <MESSAGE value="Adding the swagger description to interface ProductCompositeService in the api library closes #53" />
     <MESSAGE value="Adding open api to build file from the microservice product-composite-service closes #54" />
     <MESSAGE value="Update the version from open api in the library api closes #55" />
@@ -730,6 +729,7 @@
     <MESSAGE value="Adding post and delete mapping to review service closes #71" />
     <MESSAGE value="Revision of the CR(U)D methods in the product composite integration and adding a handleHttpClientException method closes #72" />
     <MESSAGE value="Revision and adding the CR(U)D methods in the product composite service implementation class closes #73" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revision and adding the CR(U)D methods in the product composite service implementation class closes #73" />
+    <MESSAGE value="Update the application.yml from the microservice product composite closes #74" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update the application.yml from the microservice product composite closes #74" />
   </component>
 </project>
