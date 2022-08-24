@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/test/java/de/oscharko/microservices/core/product/MapperTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +68,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -339,14 +339,7 @@
       <workItem from="1661238898432" duration="7936000" />
       <workItem from="1661326087614" duration="7912000" />
       <workItem from="1661344535315" duration="38000" />
-      <workItem from="1661344587085" duration="415000" />
-    </task>
-    <task id="LOCAL-00046" summary="Adding missing descriptions in the class ProductCompositeServiceImpl closes #36">
-      <created>1659779029250</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1659779029250</updated>
+      <workItem from="1661344587085" duration="831000" />
     </task>
     <task id="LOCAL-00047" summary="Adding devtools to the microservices product-composite-service, recommendation-service and review-service closes #37">
       <created>1659779267961</created>
@@ -684,7 +677,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661344830884</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="Adding spring data mongoDB to the application.yml from microservice product service closes #81">
+      <created>1661345157763</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1661345157763</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -707,7 +707,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Adding bad requests exception to the util microservice class GlobalControllerExceptionHandler closes #59" />
     <MESSAGE value="Adding app commands" />
     <MESSAGE value="Adding new command to docker commands" />
     <MESSAGE value="Adding databases mongoDB and mySQL to the docker-compose closes #61" />
@@ -732,6 +731,7 @@
     <MESSAGE value="Creating new persistence package and adding a product entity class and a product repository interface closes #78" />
     <MESSAGE value="Adding a product mapper interface in the microservice product service package services closes #79" />
     <MESSAGE value="Adding C(R)(U)D methods in the product service implementation class closes #80" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding C(R)(U)D methods in the product service implementation class closes #80" />
+    <MESSAGE value="Adding spring data mongoDB to the application.yml from microservice product service closes #81" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding spring data mongoDB to the application.yml from microservice product service closes #81" />
   </component>
 </project>
