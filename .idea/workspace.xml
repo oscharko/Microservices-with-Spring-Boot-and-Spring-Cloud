@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/services/ProductCompositeIntegration.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/services/ProductCompositeIntegration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/services/ProductCompositeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-composite-service/src/main/java/de/oscharko/microservices/composite/product/services/ProductCompositeServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -338,14 +337,7 @@
       <workItem from="1661158633458" duration="2670000" />
       <workItem from="1661166121461" duration="473000" />
       <workItem from="1661238898432" duration="7936000" />
-      <workItem from="1661326087614" duration="2127000" />
-    </task>
-    <task id="LOCAL-00037" summary="Set up runtime properties and logging behaviour (dev) for microservice review-service closes #27">
-      <created>1659689176862</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1659689176862</updated>
+      <workItem from="1661326087614" duration="2747000" />
     </task>
     <task id="LOCAL-00038" summary="Implements the three core services in the product-composite-service closes #28">
       <created>1659690328711</created>
@@ -683,7 +675,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661258863268</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Revision of the CR(U)D methods in the product composite integration and adding a handleHttpClientException method closes #72">
+      <created>1661331609930</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1661331609930</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -706,7 +705,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Adding docker compose for managing the microservice landscape closes #50" />
     <MESSAGE value="Update the .bash test file for automatic testing the microservice landscape with containers closes #51" />
     <MESSAGE value="Adding open api to build file from the api library closes #52" />
     <MESSAGE value="Adding the swagger description to interface ProductCompositeService in the api library closes #53" />
@@ -731,6 +729,7 @@
     <MESSAGE value="Change the argument status in the recommendation class from constant to variable and adding setters for all arguments closes #69" />
     <MESSAGE value="Change the argument status in the review class from constant to variable and adding setters for all arguments closes #70" />
     <MESSAGE value="Adding post and delete mapping to review service closes #71" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding post and delete mapping to review service closes #71" />
+    <MESSAGE value="Revision of the CR(U)D methods in the product composite integration and adding a handleHttpClientException method closes #72" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revision of the CR(U)D methods in the product composite integration and adding a handleHttpClientException method closes #72" />
   </component>
 </project>
