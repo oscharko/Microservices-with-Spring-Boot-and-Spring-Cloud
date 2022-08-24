@@ -1,5 +1,6 @@
 package de.oscharko.microservices.core.product;
 
+import de.oscharko.microservices.core.product.persistence.ProductEntity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,6 +42,6 @@ public class ProductServiceApplication {
         IndexResolver resolver = new MongoPersistentEntityIndexResolver(mappingContext);
 
         IndexOperations indexOps = mongoTemplate.indexOps(ProductEntity.class);
-        resolver.resolveIndexFor(ProductEntity.class).forEach(e -> indexOps.ensureIndex(e));
+        resolver.resolveIndexFor(ProductEntity.class).forEach(indexOps::ensureIndex);
     }
 }

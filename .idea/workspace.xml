@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/de/oscharko/microservices/core/product/persistence/ProductEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/de/oscharko/microservices/core/product/persistence/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/main/java/de/oscharko/microservices/core/product/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/de/oscharko/microservices/core/product/ProductServiceApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,9 +69,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="package-info" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -337,14 +339,7 @@
       <workItem from="1661158633458" duration="2670000" />
       <workItem from="1661166121461" duration="473000" />
       <workItem from="1661238898432" duration="7936000" />
-      <workItem from="1661326087614" duration="4857000" />
-    </task>
-    <task id="LOCAL-00042" summary="API implementation of the composite microservice closes #32">
-      <created>1659775202526</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1659775202526</updated>
+      <workItem from="1661326087614" duration="5272000" />
     </task>
     <task id="LOCAL-00043" summary="Completes implementation of both the code and composite microservices closes #33">
       <created>1659777481793</created>
@@ -682,7 +677,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661333932744</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="Adding logging and database functionality to the product service main class closes #77">
+      <created>1661334322446</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1661334322446</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -705,7 +707,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Update the version from open api in the library api closes #55" />
     <MESSAGE value="Update the version from open api in the microservice product-composite-service closes #56" />
     <MESSAGE value="Adding the open api documentation api to the class ProductCompositeServiceApplication closes #57" />
     <MESSAGE value="Adding a bad exception class to the api library closes #58" />
@@ -730,6 +731,7 @@
     <MESSAGE value="Update the application.yml from the microservice product composite closes #74" />
     <MESSAGE value="Adding new test methods to the product composite service application closes #75" />
     <MESSAGE value="Adding new dependencies to the microservice product service closes #76" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding new dependencies to the microservice product service closes #76" />
+    <MESSAGE value="Adding logging and database functionality to the product service main class closes #77" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding logging and database functionality to the product service main class closes #77" />
   </component>
 </project>
