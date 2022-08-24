@@ -1,6 +1,11 @@
 server.port: 7002
 server.error.include-message: always
 
+spring.data.mongodb:
+  host: localhost
+  port: 27017
+  database: product-db
+
 logging:
   pattern:
     console: "%d %-5level %logger : %msg%n"
@@ -8,6 +13,7 @@ logging:
   level:
     root: INFO
     de.oscharko: DEBUG
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
   file:
     path: logs/product-service/application-debug.log
 
@@ -15,3 +21,5 @@ logging:
 spring.config.activate.on-profile: docker
 
 server.port: 8080
+
+spring.data.mongodb.host: mongodb
