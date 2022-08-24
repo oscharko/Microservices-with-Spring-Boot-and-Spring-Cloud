@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="875ff433-d4e6-4d6a-bdc1-c6c58e58a178" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/de/oscharko/microservices/core/product/persistence/ProductEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/de/oscharko/microservices/core/product/persistence/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/de/oscharko/microservices/core/product/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/de/oscharko/microservices/core/product/ProductServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/de/oscharko/microservices/core/product/services/ProductMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -339,14 +337,7 @@
       <workItem from="1661158633458" duration="2670000" />
       <workItem from="1661166121461" duration="473000" />
       <workItem from="1661238898432" duration="7936000" />
-      <workItem from="1661326087614" duration="5272000" />
-    </task>
-    <task id="LOCAL-00043" summary="Completes implementation of both the code and composite microservices closes #33">
-      <created>1659777481793</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1659777481793</updated>
+      <workItem from="1661326087614" duration="5625000" />
     </task>
     <task id="LOCAL-00044" summary="Adding annotation @ComponentScan() to the microservices product-composite-service, recommendation-service and review-service closes #34">
       <created>1659778394429</created>
@@ -684,7 +675,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661334322446</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="Creating new persistence package and adding a product entity class and a product repository interface closes #78">
+      <created>1661334735737</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1661334735737</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -707,7 +705,6 @@
       <path value="$PROJECT_DIR$/api" />
       <path value="$PROJECT_DIR$/util" />
     </ignored-roots>
-    <MESSAGE value="Update the version from open api in the microservice product-composite-service closes #56" />
     <MESSAGE value="Adding the open api documentation api to the class ProductCompositeServiceApplication closes #57" />
     <MESSAGE value="Adding a bad exception class to the api library closes #58" />
     <MESSAGE value="Adding bad requests exception to the util microservice class GlobalControllerExceptionHandler closes #59" />
@@ -732,6 +729,7 @@
     <MESSAGE value="Adding new test methods to the product composite service application closes #75" />
     <MESSAGE value="Adding new dependencies to the microservice product service closes #76" />
     <MESSAGE value="Adding logging and database functionality to the product service main class closes #77" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding logging and database functionality to the product service main class closes #77" />
+    <MESSAGE value="Creating new persistence package and adding a product entity class and a product repository interface closes #78" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating new persistence package and adding a product entity class and a product repository interface closes #78" />
   </component>
 </project>
